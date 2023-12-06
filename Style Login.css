@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(Rpage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+.LogPage {
+
+width: 420px;
+background:transparent;
+color:  #5a99c0;
+border-radius: 10px;
+padding: 30px 40px ;
+
+}
+
+.LogPage h1 {
+
+    font-size: 40px;
+    text-align: center;
+    font-family:Verdana;
+    
+}
+
+.LogPage .input-box {
+
+    width: 100%;
+    height: 50ox;
+    background: rgb(254, 255, 255);
+    margin: 30px 0;
+    
+     
+}
+
+.input-box input {
+
+width: 100%;
+height: 100%;
+background: transparent;
+border: none;
+outline: none;
+border: 2px solid rgb( rgb(255, 255, 255));
+border-radius: 40px;
+font-size: 16px;
+color: rgb(5, 5, 5);
+padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input ::placeholder {
+
+    color:  #5a99c0;
+
+}
+
+.input-box i {
+
+    position: absolute;
+    right: 540px;
+    top: 31%;
+    transform: translate(-50%);
+    font-size: 25px;
+
+}
+
+.LogPage .remember-forget {
+
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+margin-right:  -15px 0 15px;
+
+}
+
+
+.remember-forget label input {
+
+accent-color:  #5a99c0;
+margin-right: 3px;
+
+}
+
+.remember-forget a {
+
+    color:  #5a99c0;
+    text-decoration: none;
+
+}
+
+.remember-forget a:hover {
+
+    text-decoration: underline;
+}
+
+.LogPage .button {
+
+    width: 100%;
+    height: 45px;
+    background:  #5a99c0;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10ox #fff;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+
+.LogPage .register-link {
+
+font-size: 15px;
+text-align: center;
+margin-top: 20px;
+
+}
+
+.register-link p a {
+
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+
+text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes showRight {
+    100% {
+        width: 0;
+    }
+   
+}

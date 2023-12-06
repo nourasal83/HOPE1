@@ -1,0 +1,492 @@
+
+
+
+:root {
+    --primary : rgb(71, 112, 154);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    
+}
+
+
+body{
+    background: #e4f3fd;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+
+header{
+
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #ffff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--primary);
+}
+
+header .navbar a{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--primary);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--primary);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .2rem solid rgba(0, 0, 0, 3);
+    display: block;
+}
+
+
+
+.heading1{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(211, 237, 255);
+}
+
+.heading1 span {
+
+    color: var(--primary);
+}
+
+
+
+.About .row{
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.About .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.About .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.About .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+
+}
+
+.About .row .content1{
+    flex: 1 1 40rem;
+
+}
+
+
+.About .row .content1 h3{
+    font-size: 3rem;
+    color: rgb(20, 33, 45);
+}
+
+.About .row .content1 p{
+    font-size: 2.5rem;
+    color: rgb(85, 125, 164);
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(211, 237, 255);
+}
+
+.heading span {
+
+    color: var(--primary);
+}
+
+
+.Products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+}
+
+
+.Products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    position:relative;
+    
+    
+}
+
+.Products .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem ;
+    font-size: 2rem;
+    color: rgb(71, 112, 154);
+    background: rgb(228, 242, 254);
+    z-index: 1;
+    border-radius: .5rem;
+
+}
+
+.Products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.Products .box-container .box .image img{
+    height: 25rem;
+}
+
+
+.Products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+
+.Products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0;right: 0;
+    display: flex;
+}
+
+.Products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.Products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--primary);
+    color: #fff;
+}
+
+.Products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid rgb(174, 201, 227);
+    border-right: .1rem solid rgb(174, 201, 227);
+    width: 100%;
+}
+
+.Products .box-container .box .image .icons a:hover{
+   background: rgb(20, 33, 45);
+}
+
+.Products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.Products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.Products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.Products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: rgb(71, 112, 154);
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+
+
+
+.heading2{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(211, 237, 255);
+}
+
+.heading2 span {
+
+    color: var(--primary);
+}
+
+
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.review .box-container .box2{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgb(20, 33, 45);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.review .box-container .box2 .fa-quote-right{
+    position: absolute;
+    bottom: 3rem; right: 3rem;
+    font-size: 6rem;
+    color: #fff;
+}
+
+.review .box-container .box2 .stars i{
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.review .box-container .box2 p{
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box2 .user{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.review .box-container .box2 .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box2 .user h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.review .box-container .box2 .user span{
+    font-size: 1.5rem;
+    color: #999;
+}
+
+
+
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #666;
+    border-top: .1rem solid rgb(20, 33, 45);
+
+}
+
+.footer .credit span{
+    color: var(--primary);
+}
+
+
+
+
+
+@media (max-width:991px) {
+
+
+html{
+    font-size: 55%;
+   
+}
+
+
+.heading1{
+    font-size: 3rem;
+}
+
+header { 
+    padding: 2rem; 
+}
+    
+}
+
+
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar {
+
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgb(71, 112, 154);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+    header .navbar a{
+        margin: 2.5rem;
+        padding: 1.5rem;
+        background: #ffff;
+        border: 1rem solid rgb(174, 201, 227);
+        display: block;
+    }
+}
+
+
+
+@media (max-width:450px) {
+
+
+    html{
+        font-size: 50%;
+       
+    }
+    
+        
+    }
+
+    
+
+
